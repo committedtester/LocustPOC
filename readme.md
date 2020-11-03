@@ -8,8 +8,8 @@ Run the test via the website
 locust -f starWarsApi/getData.py
 http://localhost:8089/
 
-Run the test as CI
-locust -f starWarsApi/getData.py --headless --csv=example -t2m
+Run the test with a minimum number of requests for debug
+locust -f starWarsApi/getData.py --headless --csv=example --run-time=10s
 
 
 
